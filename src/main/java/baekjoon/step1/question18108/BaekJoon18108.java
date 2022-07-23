@@ -1,0 +1,14 @@
+package baekjoon.step1.question18108;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class BaekJoon18108 {
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println(Integer.parseInt(reader.readLine()) - 543);
+
+	}
+}
