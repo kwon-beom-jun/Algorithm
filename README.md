@@ -2,7 +2,7 @@
 <br/><br/>
 
 ### Algorithm Study
-#### 1. BeakJoon Algorithm
+#### 1. BaekJoon Algorithm
 
 
 <br/><br/>
