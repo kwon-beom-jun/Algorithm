@@ -2,11 +2,11 @@
 <br/><br/>
 
 ### Algorithm Study
-####1. BeakJoon Algorithm
+#### 1. BeakJoon Algorithm
 
 
 <br/><br/>
-####2. Programmers Algorithm
+#### 2. Programmers Algorithm
 
 
 
