@@ -1,5 +1,12 @@
 # study_algorithm
 <br/><br/>
+### 매일 한문제씩 풀이
+- 일과 같이 병행해서 당일 24시 이전에 끝내기엔 촉박하다 생각하여 새벽도 포함하는 solved.ac 기준으로 함. <br>
+  ( solved.ac 완료 문제 업데이트 시기 : 새벽 6시 ) <br>
+  https://solved.ac/profile/qjawns0618
+
+<br>
+<br/>
 
 ## 백준 알고리즘 패키지 리팩토링 <br>
   ### Step 단위로 <br>
