@@ -14,7 +14,7 @@ import java.io.OutputStreamWriter;
  *	# 다른 사람 풀이 참조하여 리팩토링
  *
  */
-public class BaekJoon2751_Success_final {
+public class BaekJoon2751_Success_Final {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
