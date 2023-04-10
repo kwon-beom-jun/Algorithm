@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
-* 문제 풀이
-*		1. 카운터 증가는 666이 포함되어야 함
-*		2. 다음 카운터 증가까지 1씩 증가
-*
-*/
+ * 문제 풀이
+ *	1. 카운터 증가는 666이 포함되어야 함
+ *	2. 다음 카운터 증가까지 1씩 증가
+ *
+ */
 public class BaekJoon1436 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
