@@ -11,8 +11,8 @@ import java.io.InputStreamReader;
  * 	# 에라토스테네스의 체
  *	# double 지수 치환 & long 사용 이유
  *		- double 변수는 64비트 크기를 가지는 부동 소수점형 변수이고 부동 소수점 연산은 long의 정수형 연산보다 더 복잡
- *  	- NumberFormat : 기본적으로 캐시를 사용하여 성능을 향상
- *  	- BigDecimal : 매우 큰 숫자에서 효율적
+ *		- NumberFormat : 기본적으로 캐시를 사용하여 성능을 향상
+ *		- BigDecimal : 매우 큰 숫자에서 효율적
  *
  */
 public class BaekJoon4134 {
