@@ -23,7 +23,7 @@ import java.io.InputStreamReader;
  *	# x, y는 정수
  * 
  */
-public class BaekJoon19532_final {
+public class BaekJoon19532_Final {
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
