@@ -1,4 +1,4 @@
-package baekjoon.step10001_20000.step11001_12000.step11101_11200;
+package baekjoon.step10001_20000.step11001_12000.step11001_11100;
 
 import java.io.BufferedReader;
 import java.io.IOException;
