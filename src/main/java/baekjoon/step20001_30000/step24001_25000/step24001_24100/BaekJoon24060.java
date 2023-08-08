@@ -1,4 +1,4 @@
-package baekjoon.step20001_30000.step24001_25000.step24401_24500;
+package baekjoon.step20001_30000.step24001_25000.step24001_24100;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -35,9 +35,7 @@ public class BaekJoon24060 {
 			int mid = (min + max) / 2;
 			merge_sort(min, mid);
 			merge_sort(mid + 1, max);
-			if (check) {
-				marge(min, mid, max);
-			}
+			marge(min, mid, max);
 		}
 	}
 	
