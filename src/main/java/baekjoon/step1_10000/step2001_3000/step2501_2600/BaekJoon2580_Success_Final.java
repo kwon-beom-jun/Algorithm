@@ -15,10 +15,8 @@ import java.util.List;
  *		4. 1-3번  루프
  *		5. 0이 모두 채워지면 종료
  *
- * 	# 시간 초과
- *
  */
-public class BaekJoon2580_Fail {
+public class BaekJoon2580_Success_Final {
 	
 	static int sudoku[][] = new int[9][9];
 	static List<String> list = new ArrayList<>();
@@ -44,62 +42,47 @@ public class BaekJoon2580_Fail {
 	}
 	
 	public static boolean sudoku(int depth) {
-
+		
 		if (depth == list.size()) {
-			
-			boolean check = true;
-			
-			for (int i = 0; i < 9; i++) {
-				for (int j = 0; j < 9; j++) {
-					if (sudoku[i][j] == 0) {
-						check = false;
-						break;
-					}
-				}
-			}
-			
-			if (check) {
-				Arrays.stream(sudoku)
-						.map(row -> Arrays.stream(row)
-						.mapToObj(Integer::toString)
-						.reduce((a, b) -> a + " " + b)
-						.orElse(""))
-						.forEach(System.out::println);
-				return true;
-			}
-			
-			return false;
+			Arrays.stream(sudoku)
+					.map(row -> Arrays.stream(row)
+					.mapToObj(Integer::toString)
+					.reduce((a, b) -> a + " " + b)
+					.orElse(""))
+					.forEach(System.out::println);
+			return true;
 		}
 		
-		for (int i = 0 + depth; i < list.size(); i++) {
-			
-			int x = list.get(i).charAt(0)-'0';
-			int y = list.get(i).charAt(1)-'0';
-			boolean checkValue[] = new boolean[10];
+		int x = list.get(depth).charAt(0) - '0';
+        int y = list.get(depth).charAt(1) - '0';
 
-			// 가로, 세로, 정사각형 값 확인
-			checkValue = checkValue(checkValue, x, y);
-			
-			for (int j = 1; j < 10; j++) {
-				if (!checkValue[j]) {
-					sudoku[x][y] = j;
-					if (sudoku(depth+1)) {
-						return true;
-					}
-					sudoku[x][y] = 0;
+        // 가로, 세로, 정사각형 값 확인
+        boolean checkValue[] = new boolean[10];
+ 		checkValue = checkValue(checkValue, x, y);
+ 		
+ 		for (int j = 1; j < 10; j++) {
+        	if (!checkValue[j]) {
+                sudoku[x][y] = j;
+                if (sudoku(depth + 1)) {
+					return true;
 				}
-			}
-		}
-		
-		return false;
+                sudoku[x][y] = 0;  // backtrack
+            }
+        }
+ 		
+ 		return false;
 	}
 	
 	public static boolean[] checkValue(boolean visit[], int x, int y) {
 		
 		// 가로, 세로 검사
 		for (int i = 0; i < 9; i++) {
-			if (sudoku[x][i] != 0) visit[sudoku[x][i]] = true;
-            if (sudoku[i][y] != 0) visit[sudoku[i][y]] = true;
+			if (sudoku[x][i] != 0) {
+				visit[sudoku[x][i]] = true;
+			}
+			if (sudoku[i][y] != 0) {
+				visit[sudoku[i][y]] = true;
+			}
 		}
 		
 		// 3*3 정사각형 검사
