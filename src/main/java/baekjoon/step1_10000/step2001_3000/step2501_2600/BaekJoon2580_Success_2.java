@@ -1,4 +1,4 @@
-package algorithm.baekjoon2000_2;
+package baekjoon.step1_10000.step2001_3000.step2501_2600;
 
 import java.io.BufferedReader;
 import java.io.IOException;
