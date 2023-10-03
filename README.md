@@ -6,7 +6,7 @@
   https://solved.ac/profile/qjawns0618
 
 
-<br>
+<br/>
 <br/>
 
 
@@ -14,19 +14,22 @@
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=qjawns0618)](https://solved.ac/qjawns0618)  
 
 
-<br>
+<br/>
 <br/>
 
-## 백준 알고리즘 패키지 리팩토링 <br>
-  ### Step 단위로 <br>
-    AS-IS : Step 1~7 <br>
-  ### 번호 단위로 변경 <br>
-    TO-BE : Step_1-10000 > Step_1-1000 > Step_1-100 <br>
-                         > Step_1001-2000 > Step_1001-1100 <br>
-            Step_10001-20000 > Step_10001-11000 > Step_10001-10100 <br>
-                             > Step_11001-12000 > Step_11001-11100 <br>
+## 백준 알고리즘 패키지 구조 <br>
+  ### 번호 단위
+    BaekJoon
+        Step_1-10000 > Step_1-1000 > Step_1-100
+                     > Step_1001-2000 > Step_1001-1100
+                       ...
+                     
+        Step_10001-20000 > Step_10001-11000 > Step_10001-10100
+                         > Step_11001-12000 > Step_11001-11100
+                           ...
+                             
 
-<br>
+<br/>
 
 
 
